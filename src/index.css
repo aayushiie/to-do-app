@@ -1,0 +1,122 @@
+body {
+  margin: 0;
+  padding: 40px;
+  background-color: #f5f5f5;
+  font-family: Arial, sans-serif;
+  color: #111;
+}
+
+.todo-container,
+.tasks-container {
+  max-width: 700px;
+  margin: auto;
+}
+
+.heading,
+.task-heading {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+.add-task-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 30px;
+}
+
+.task-input {
+  flex: 1;
+  padding: 12px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 16px;
+  background: white;
+}
+
+.task-input:focus {
+  border-color: black;
+}
+
+.add-btn {
+  padding: 12px 18px;
+  border: 1px solid black;
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.add-btn:hover {
+  background: #f0f0f0;
+}
+
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.task-card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  padding: 14px;
+  background: white;
+}
+
+.task-content {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex: 1;
+}
+
+.checkbox {
+  cursor: pointer;
+}
+
+.task-text {
+  font-size: 16px;
+}
+
+.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.button-group {
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.no-task {
+  padding: 10px 0;
+  color: #666;
+}
+
+.task-count {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  .add-task-container {
+    flex-direction: column;
+  }
+
+  .task-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .button-group {
+    flex-wrap: wrap;
+  }
+}
